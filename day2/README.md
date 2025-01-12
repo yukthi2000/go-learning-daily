@@ -1,17 +1,13 @@
-# Day 1: Hello, World
+# Day 2: Variables
 
 ## What I Learned
-- `package main` is the entry point of a Go program.
-- `import "fmt"` is used to include the `fmt` package for formatted I/O.
-- `fmt.Println` prints a line of text.
-
-## How to Run
-1. **Open your terminal**.
-2. **Navigate to the directory** where your `hello.go` file is located.
-3. **Run the following command** to execute your program:
-
-```sh
-go run hello.go
+- `var` declares 1 or more variables.
+- You can declare multiple variables at once.
+- Go will infer the type of initialized variables.
+- Variables declared without a corresponding initialization are zero-valued. For example, the zero value for an `int` is `0`.
+- `:=` is shorthand for declaring and initializing variables, e.g., `var f string = "apple"` can be written as `f := "apple"`. This syntax is only available inside functions.
+- `const` defines constants.
+- Use `reflect.TypeOf` to check the type of a variable.
 
 ## Code
-See [hello.go](hello.go).
+See [variables.go](variables.go).
